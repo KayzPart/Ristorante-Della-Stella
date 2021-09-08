@@ -5,32 +5,53 @@
 /* header */
 .row{
     margin: 0;
+    padding: 0;
 }
 header{
     background: #725b53;
 }
+.img{
+    padding-left: 35px;
+}
 .titre-header{
     font-family: 'Lobster', cursive;
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-left: 200px;
+}
+.titre-footer{
+    font-family: 'Lobster', cursive;
 }
 .btn-group{
     height: 5vh;
-    width: 15vw;
-    margin-top: 70px;
+    padding-left: 130px;
+    padding-bottom: 10px;
 }
-#logo-site{
+.logo-site{
     height: 15vh;
-    margin-left: 15px;
-    margin-top: 15px;
 }
 /* footer */
-
-@media (max-width: 320px){
+footer{
+    background: #d3b8ae;
+}
+@media (max-width: 768px){
     #logo-site{
-        height: 10vh;
+        height: 9vh;
+    }
+    .img{
+        padding-left: 3px;
+    }
+    .titre-header{
+        padding-right: 0;
+        padding-top: 0;
+        padding-left: 20px;
+        
     }
     .btn-group{
-        padding: 0%;
-        margin-top: 100px;
+        height: 6vh;
+        padding-left: 20px;
+        padding-bottom: 5px;
+    }
+    #dropdownMenuButton{
+        padding: 0px 5px 0px 5px;
     }
 }
