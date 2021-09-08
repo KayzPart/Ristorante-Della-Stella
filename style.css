@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* body */
+
+/* header */
+.row{
+    margin: 0;
+}
+header{
+    background: #725b53;
+}
+.titre-header{
+    font-family: 'Lobster', cursive;
+    margin-top: 50px;
+}
+.btn-group{
+    height: 5vh;
+    width: 15vw;
+    margin-top: 70px;
+}
+#logo-site{
+    height: 15vh;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+/* footer */
+
+@media (max-width: 320px){
+    #logo-site{
+        height: 10vh;
+    }
+    .btn-group{
+        padding: 0%;
+        margin-top: 100px;
+    }
+}
