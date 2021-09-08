@@ -18,20 +18,33 @@ header{
     padding-top: 50px;
     padding-left: 200px;
 }
-.titre-footer{
-    font-family: 'Lobster', cursive;
-}
 .btn-group{
     height: 5vh;
     padding-left: 130px;
     padding-bottom: 10px;
 }
 .logo-site{
-    height: 15vh;
+    height: 10vh;
+}
+/* video */
+video{
+    height: auto;
+    width: 100vw;
+}
+#video-presta{
+    height: 600px;
+    overflow: hidden;
 }
 /* footer */
 footer{
     background: #d3b8ae;
+}
+.img-footer{
+    padding-left: 35px;
+}
+.titre-footer{
+    font-family: 'Lobster', cursive;
+    padding-top: 20px;
 }
 @media (max-width: 768px){
     #logo-site{
@@ -53,5 +66,10 @@ footer{
     }
     #dropdownMenuButton{
         padding: 0px 5px 0px 5px;
+    }
+    .img-footer{
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }
