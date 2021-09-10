@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 /* Body */
 body{
-    background: #827717;
+    background: #1b1b1b;
 }
 h2, h3{
     color: #f8ffd7;
@@ -38,6 +38,9 @@ header{
     height: 5vh;
      transform: translateY(30px);
 }
+.btn-secondary{
+    background: #1b1b1b;
+}
 /* Section coordonnées */
 .row{
     margin: 0;
@@ -59,13 +62,10 @@ footer{
     background: #912323;
     width: 100%;
 }
-.img-footer{
-    padding-left: 35px;
-}
+
 .titre-footer{
     font-family: 'Lobster', cursive; 
     color: #f8ffd7;  
-    text-align: center;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -78,7 +78,7 @@ footer{
     cursor: pointer; 
     padding: 15px;   
 }
-  #myBtn:hover {
+#myBtn:hover {
     background-color: #555; 
 }
 .back-to-up{
@@ -126,7 +126,6 @@ footer{
     .titre-footer{
         padding-top: 5px;
     }
-    
 }
 @media (max-width: 768px){
     #logo-site{
@@ -156,9 +155,6 @@ footer{
     .popover-arrow{
         transform: translate3d(-30px, -12px, 0px) rotate(90deg) !important;
     }
-    /* #dropdownMenuButton{
-        padding: 0px 5px 0px 5px;
-    } */
     .img-footer{
         padding-left: 5px;
         padding-top: 5px;
@@ -216,17 +212,26 @@ footer{
     }
 }
 @media (max-width: 320px){
-    /* #maps{
-        width: 250px;
-    } */
     .titre-header{
         padding-left: 0px;
     }
+    .container{
+        padding: 0;
+    }
+    .GoogleMapsPerso{
+        padding: 0;
+    }
+    h1{
+        font-size: 20px;
+    }
+    header h1{
+        transform: translateX(-75px);
+    }
+    .titre-footer{
+        padding: 0;
+    }
 }
 @media (max-width: 280px){
-    /* #maps{
-        width: 200px;
-    } */
     video{
         height: auto;
     }
