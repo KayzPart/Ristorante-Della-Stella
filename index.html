@@ -10,45 +10,45 @@
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <header>
-            <div class="col-12 text-center">
-                <div>
-                    <img class="logo-site" src="./Ressource/logo-della-stella_optimized.png" alt="logo-della-stella">
-                </div>
-                <div class="titre-header">
-                    <h1>
-                        Ristorante Della Stella
-                    </h1>
-                </div>
-                <div class="btn-group col-2">
-                    <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="En construction">
-                        Menu
-                      </button>
-                        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        Menu
+        <header> 
+                <div class="col-12 text-center">
+                    <div>
+                        <img class="logo-site" src="./Ressource/logo-della-stella_optimized.png" alt="logo-della-stella">
+                    </div>
+                    <div class="titre-header">
+                        <h1>
+                            Ristorante Della Stella
+                        </h1>
+                    </div>
+                    <div class="btn-group col-2">
+                        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="En construction">
+                            Menu
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        </ul> -->
+                            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            <li><a class="dropdown-item" href="#">Menu item</a></li>
+                            </ul> -->
+                    </div>
                 </div>
-            </div>
-        </header>
-        <div class="container">
-            <section id="video-presta">
-                <video autoplay muted loop src="./Ressource/Adobe_Spark_Video (1) (online-video-cutter.com).mp4"></video>
-            </section>
-<!-- Section Coordonnées -->
-            <section id="coordonnees">
+            </header>
+            <div class="container" style="width: 100%;">
+                <section id="video-presta"  style="width: 100%;">
+                    <video  style="width: 100%;" autoplay muted loop src="./Ressource/Adobe_Spark_Video (1) (online-video-cutter.com).mp4"></video>
+                </section>
+    <!-- Section Coordonnées -->
+                <section id="coordonnees"  style="width: 100%;">
                     <div class="row">
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-6 px-0">
                             <div class="content-contact">
                                 <h2 class="h2-contact">
                                     Nous Contacter
                                 </h2>
                                 <div class="row">
-                                    <div class="col-12 col-lg-6">
+                                    <div class="col-12 col-lg-6 px-0">
                                         <div class="txtcontact">
                                             <h3>
                                                 Horaires <br> d'ouvertures :
@@ -84,36 +84,36 @@
                                 </div>
                             </div>
                             </div> 
-                            <div class="col-12 col-lg-6">
+                            <div class="col-12 col-lg-6 pe-0">
                                 <div class="GoogleMapsPerso">
-                                    <iframe id="maps" title="GoogleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.109404286912!2d5.198015615791415!3d46.20827857911683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f351d5381cf5a1%3A0xa21cda6ac9796fea!2sOnlineformapro!5e0!3m2!1sfr!2sfr!4v1631125019508!5m2!1sfr!2sfr" width="520" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    <iframe id="maps" title="GoogleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.109404286912!2d5.198015615791415!3d46.20827857911683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f351d5381cf5a1%3A0xa21cda6ac9796fea!2sOnlineformapro!5e0!3m2!1sfr!2sfr!4v1631125019508!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                 </div>
                             </div>      
                         </div>          
                     </div>
-            </section>
-        </div>
-        <!-- Back to top button -->
-        <button
-            type="button"
-            class="btn btn-success btn-floating btn-lg"
-            id="btn-back-to-top"
-            >
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        <footer>
-            <div class="col-12 footer">
-                <div>
-                    <img class="logo-site" src="./Ressource/logo-della-stella_optimized.png" alt="logo-della-stella">
-                </div>
-                <div class="titre-footer">
-                    <h1>Ristorante Della Stella</h1>
-                </div>
+                   
+                </section>
+            </div> 
+        <div class="row but">
+            <div class="col-1 back-to-up">
+                <button onclick="topFunction()" id="myBtn" title="Go to top"><img id="fleche" src="./Ressource/arrow-up.svg" alt="retourner-vers-le-haut">
+                </button>
             </div>
-        </footer>
-        
-       
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-            <script src="./script.js"></script>
+        </div>  
+            <footer>
+                <div class="row">
+                    <div class="col-2">
+                        <img class="logo-site" src="./Ressource/logo-della-stella_optimized.png" alt="logo-della-stella">
+                    </div>
+                    <div class="titre-footer col-6">
+                        <h1>Ristorante Della Stella</h1>
+                    </div>
+                </div>
+                
+            </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+        <script src="./script.js">
+        </script>
     </body>
 </html>
