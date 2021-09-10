@@ -110,20 +110,15 @@ footer{
     #video-presta{
         height: auto;
     }
-    video{
-        width: 100%;
-    }
-    /* #maps{
-        width: 430px;
-    } */
     .btn-group{
         padding: 0;
         position: fixed;
         right: 45px;
     }
     .titre-header{
-        padding-top: 5px;
+        padding-top: 35px;
         padding-left: 10px;
+        transform: translateX(-400px);
     }
     .titre-footer{
         padding-top: 5px;
@@ -136,10 +131,11 @@ footer{
     .img{
         padding-left: 3px;
     }
+
     .titre-header{
         padding-right: 0;
         padding-top: 40px;
-        padding-left: 20px;  
+        transform: translateX(-290px); 
     }
     .titre-footer{
         padding-top: 40px;
@@ -149,7 +145,7 @@ footer{
         height: 7vh;
         padding-bottom: 5px;
         position: fixed;
-        right: 67px;
+        right: 27px;
     }
     .popover{
         transform: translate(-30px, 80px) !important; 
@@ -172,6 +168,7 @@ footer{
     #maps{
         height: 300px;
     }
+    
 }
 @media (max-width:550px){
     .btn-group{
@@ -180,54 +177,73 @@ footer{
     }
     .titre-header{
         padding-left: 10px;
+        transform: translateX(-200px);
     }
     .titre-footer{
         padding-left: 10px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #video-presta{
+        height: 290px;
     }
 }
 @media (max-width: 420px){
     #video-presta{
         height: 200px;
     }
+    h1{
+        font-size: 20px;
+    }
     .titre-header{
-        padding-left: 50px;
+        transform: translateX(-120px);
     }
     .titre-footer{
-        padding-right: 60px;
+        padding-left: 40px;
+    }
+    .GoogleMapsPerso{
+        padding: 0;
+    }
+}
+@media (max-width: 375px){
+    h1{
+        font-size: 20px;
+    }
+    .titre-header{
+        transform: translateX(-100px);
+    }
+    .titre-footer{
+        padding-right: 0;
     }
 }
 @media (max-width: 360px){
-    /* #maps{
-        width: auto;
-    } */
     .titre-footer{
-        padding-left: 40px;
+        padding-left: 0;
     }
     .titre-header{
-        padding-left: 40px;
+        padding-left: 0;
+        transform: translateX(-100px);
     }
-    #video-presta{
-        height: 200px;
-    }
-    video{
-        height: auto;
+    .GoogleMapsPerso{
+        padding: 0;
     }
 }
 @media (max-width: 320px){
     .titre-header{
         padding-left: 0px;
     }
-    .container{
-        padding: 0;
+    #video-presta{
+        height: 150px;
     }
     .GoogleMapsPerso{
-        padding: 0;
+        padding-left: 0;
     }
     h1{
         font-size: 20px;
     }
     header h1{
-        transform: translateX(-75px);
+        transform: translateX(20px);
     }
     .titre-footer{
         padding: 0;
@@ -237,8 +253,8 @@ footer{
     }
 }
 @media (max-width: 280px){
-    video{
-        height: auto;
+    #video-presta{
+        height: 150px;
     }
     #coordonnees{
         padding-top: 0;
@@ -248,8 +264,15 @@ footer{
     }
     .titre-header{
         padding: 0;
+        padding-top: 20px;
+    }
+    .btn-group{
+        height: 40px;
     }
     .titre-footer{
         padding: 0;
+    }
+    h1{
+        font-size: 15px;
     }
 }
