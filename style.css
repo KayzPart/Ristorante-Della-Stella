@@ -2,11 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 /* Body */
 body{
-    background: #d3b8ae;
+    background: #827717;
+}
+h2, h3{
+    color: #f8ffd7;
+}
+p{
+    color: whitesmoke;
+}
+.container{
+    background: #757575;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 /* Header */
 header{
-    background: #725b53;
+    background: #912323;
 }
 .text-center{
     display: flex;
@@ -45,7 +56,7 @@ header{
 }
 /* footer */
 footer{
-    background: #a1887f;
+    background: #912323;
     width: 100%;
 }
 .img-footer{
@@ -63,7 +74,7 @@ footer{
 #myBtn {
     border: none; 
     border-radius: 50px;
-    background-color: red; 
+    background-color: #f8ffd7; 
     cursor: pointer; 
     padding: 15px;   
 }
