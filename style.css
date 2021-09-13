@@ -9,7 +9,6 @@ h2, h3{
     font-family: 'Lobster', cursive;
 }
 p{
-    
     color: whitesmoke;
     font-family: 'Dancing Script', cursive;
 }
@@ -113,6 +112,34 @@ footer{
 #fleche{
     width: 40px;
 }
+/* Mentions légales */
+h6{
+    color: #912323;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.modal-body {
+    color: #f8ffd7;
+    background: #757575;
+}
+.modal-header{
+    background: #912323;
+}
+.modal-footer{
+    background: #912323;
+}
+.text-decoration-none{
+    color: black;
+    font-weight: bold;
+}
+.mtn-leg{
+    display: flex;
+    justify-content: center;
+}
+.mtn-leg:hover{
+    color: #757575;
+}
+
 
 /* Media Querry */
 @media (max-width: 1030px){
