@@ -397,4 +397,22 @@ h6{
     #fleche{
         width: 30px;
     }
-}
+    /* .modal{
+        /* transform: translateX(-150px); */
+    /* }
+    .modal-body {
+        color: #f8ffd7;
+        background: #757575;
+        width: 300px;
+        font-size: 20px;
+        padding: 0;
+    }
+    .modal-header{
+        background: #912323;
+        width: 300px;
+    }
+    .modal-footer{
+        background: #912323;
+        width: 300px;
+    } */
+} 
