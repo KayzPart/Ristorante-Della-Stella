@@ -5,10 +5,13 @@ body{
     background: #1b1b1b;
 }
 h2, h3{
-    color: #f8ffd7;
+    color: hsl(71, 100%, 92%);
+    font-family: 'Lobster', cursive;
 }
 p{
+    
     color: whitesmoke;
+    font-family: 'Dancing Script', cursive;
 }
 .container{
     background: #757575;
@@ -43,14 +46,28 @@ header{
 .btn-secondary{
     background: #1b1b1b;
 }
+/* video */
+#video-presta{
+    padding-bottom: 10px;
+}
+/* Carousel */
+.carousel-row{
+    display: flex;
+    justify-content: space-between;
+}
+h5{
+    font-family: 'Lobster', cursive;
+    transform: translateY(-50px);
+    font-size: 28px;
+}
+.ant-1{
+    color: rgb(180, 98, 51);
+    
+}
 /* Section coordonnées */
 .row{
     margin: 0;
     padding: 0;
-}
-#coordonnees{
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 .h2-contact{
     padding-bottom: 20px;
@@ -98,17 +115,14 @@ footer{
 }
 
 /* Media Querry */
-@media (max-width: 800px){
-    #maps{
-        
-    }
-}
 @media (max-width: 1030px){
     .img, .img-footer{
         padding: 0;
     }
     #video-presta{
         height: auto;
+        padding-bottom: 10px;
+        padding-top: 20px;
     }
     .btn-group{
         padding: 0;
@@ -123,6 +137,17 @@ footer{
     .titre-footer{
         padding-top: 5px;
     }
+    .nxt-icon-4{
+        transform: translateY(-120px);
+    }
+    .prv-icon-4{
+        transform: translateY(-120px);
+    }
+}
+@media (max-width: 800px){
+    #video-presta{
+        padding-bottom: 10px;
+    }
 }
 @media (max-width: 768px){
     #logo-site{
@@ -131,7 +156,12 @@ footer{
     .img{
         padding-left: 3px;
     }
-
+    #carouselExampleCaptions-3{
+        padding-top: 20px;
+    }
+    .prv-icon-4, .nxt-icon-4 {
+        transform: translateY(0px);
+    }
     .titre-header{
         padding-right: 0;
         padding-top: 40px;
@@ -161,6 +191,8 @@ footer{
     #video-presta{
         overflow: hidden;
         height: 400px;
+        padding-bottom: 10px;
+        padding-top: 20px;
     }
     video{
         width: 100%;
@@ -168,7 +200,6 @@ footer{
     #maps{
         height: 300px;
     }
-    
 }
 @media (max-width:550px){
     .btn-group{
@@ -177,30 +208,59 @@ footer{
     }
     .titre-header{
         padding-left: 10px;
-        transform: translateX(-200px);
+        transform: translateX(-190px);
     }
     .titre-footer{
-        padding-left: 10px;
+        padding-left: 20px;
     }
     h1{
         font-size: 20px;
     }
     #video-presta{
-        height: 290px;
+        height: 300px;
+    }
+    .nxt-icon-4{
+        transform: translateY(0px);
+    }
+    .prv-icon-4{
+        transform: translateY(0px);
     }
 }
 @media (max-width: 420px){
     #video-presta{
         height: 200px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    #carouselExampleCaptions-1{
+        padding-top: 10px;
+    }
+    #carouselExampleCaptions-2{
+        padding-top: 10px;
+    }
+    #carouselExampleCaptions-3{
+        padding-top: 16px;
+    }
+    .carousel-control-next-icon{
+        
+        transform: translate(-5px, 5px);
+    }
+    .carousel-control-prev-icon{
+        transform: translate(5px, 5px);
+        
+    }
+    .carousel-indicators{
+        width: 55px;
+        transform: translate(35px, 20px);
     }
     h1{
         font-size: 20px;
     }
     .titre-header{
-        transform: translateX(-120px);
+        transform: translateX(-115px);
     }
     .titre-footer{
-        padding-left: 40px;
+        transform: translateX(10px);
     }
     .GoogleMapsPerso{
         padding: 0;
@@ -210,16 +270,38 @@ footer{
     h1{
         font-size: 20px;
     }
+    #video-presta{
+        height: 210px;
+    }
     .titre-header{
         transform: translateX(-100px);
     }
     .titre-footer{
         padding-right: 0;
     }
+    .carousel-indicators{
+        transform: translate(30px,20px);
+    }
 }
 @media (max-width: 360px){
+    #video-presta{
+        height: 190px;
+        padding-top: 10px;
+    }
+    .carousel-control-next-icon{
+        
+        transform: translate(-5px, 5px);
+    }
+    .carousel-control-prev-icon{
+        
+        transform: translate(5px, 5px);
+    }
+    .carousel-indicators{
+        width: 55px;
+        transform: translate(25px, 20px);
+    }
     .titre-footer{
-        padding-left: 0;
+        transform: translateX(10px);
     }
     .titre-header{
         padding-left: 0;
@@ -235,6 +317,12 @@ footer{
     }
     #video-presta{
         height: 150px;
+    }
+    #carouselExampleCaptions-1{
+        padding-top: 10px;
+    }
+    #carouselExampleCaptions-2{
+        padding-top: 10px;
     }
     .GoogleMapsPerso{
         padding-left: 0;
@@ -255,6 +343,7 @@ footer{
 @media (max-width: 280px){
     #video-presta{
         height: 150px;
+        padding-bottom: 10px;
     }
     #coordonnees{
         padding-top: 0;
@@ -269,10 +358,16 @@ footer{
     .btn-group{
         height: 40px;
     }
+    #carouselExampleCaptions-3{
+        padding-top: 16px;
+    }
     .titre-footer{
         padding: 0;
     }
     h1{
         font-size: 15px;
+    }
+    #fleche{
+        width: 30px;
     }
 }
