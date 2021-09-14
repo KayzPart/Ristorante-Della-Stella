@@ -16,6 +16,8 @@ p{
     background: #757575;
     padding-right: 30px;
     padding-left: 30px;
+    padding-bottom: 20px;
+    margin-top: 50px;
 }
 /* Header */
 header{
@@ -29,39 +31,52 @@ header{
     font-family: 'Lobster', cursive;
     padding-top: 50px;
     color: #f8ffd7;
-    display: flex;
-    justify-content: center;
+    transform: translateX(-800px);
 }
 .logo-site{
     height: 11vh;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 10px 0px 10px 10px;
 } 
 /* Bouton Menu */
 .btn-group{
     height: 5vh;
-     transform: translateY(30px);
+    transform: translateY(30px);
 }
 .btn-secondary{
     background: #1b1b1b;
 }
+#btn-menu{
+    position: fixed;
+    right: 0%;
+}
+.dropdown-menu{
+    background: #757575;
+}
 /* video */
 #video-presta{
     padding-bottom: 10px;
+    padding-top: 20px;
 }
-/* Carousel */
+video{
+    border-radius: 10px;
+}
+/* Carousel Plats */
 .carousel-row{
-    display: flex;
-    justify-content: space-between;
+    margin: 0 -12px !important;
 }
-h5{
+.carousel-item h5{
+    text-shadow: 4px 4px 4px rgb(10, 6, 6);
+    font-size: 30px;
     font-family: 'Lobster', cursive;
     transform: translateY(-50px);
-    font-size: 28px;
 }
-.ant-1{
-    color: rgb(180, 98, 51);
-    
+.p-carousel{
+    background: rgba(0, 0, 0, 0.534);
+    text-shadow: 4px 4px 4px rgb(10, 6, 6);
+    font-size: 20px;
+}
+.carousel-inner{
+    border-radius: 10px;
 }
 /* Section coordonnées */
 .row{
@@ -72,15 +87,98 @@ h5{
     padding-bottom: 20px;
 }
 #maps{
-    border-radius: 15px;
-    width: 100%;
+    border-radius: 10px;
+}
+.content-contact{
+    padding-top: 35px;
+}
+.content-contact-ad{
+    padding-top: 15px;
+}
+.content-contact-tel{
+    padding-top: 25px;
+}
+/* Avis clients / Témoignages / Contact */
+#rating-div{
+    background-color: rgb(145, 111, 48);
+}
+#avis{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 28px;
+}
+#avis:hover{
+    color: #aaa;
+}
+.rating {
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+}
+.etoile {
+    color: orange;
+    text-decoration: none;
+    font-size: 3em;
+    transition: color .4s;
+}
+.btn-primary{
+    background-color: palevioletred;
+}
+.offcanvas{
+    display: flex;
+    justify-content: center;
+}
+.offcanvas-title{
+    font-size: 25px;
+    text-align: center;
+}
+.offcanvas-body input{
+    text-align: center;
+}
+.p-resa{
+    color: black;
+    font-size: 20px;
+}
+/* Mentions légales */
+h6{
+    color: #912323;
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.modal-body {
+    color: black;
+    background: #757575;
+}
+.modal-header{
+    background: #912323;
+}
+.modal-footer{
+    background: #912323;
+}
+.text-decoration-none{
+    color: #f8ffd7;
+    font-weight: bold;
+}
+.text-decoration-none:hover{
+    color: #f8ffd78f;
+}
+.mtn-leg{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.mtn-leg:hover{
+    color: #757575;
 }
 /* footer */
 footer{
     background: #912323;
     width: 100%;
 }
-
 .titre-footer{
     font-family: 'Lobster', cursive; 
     color: #f8ffd7;  
@@ -112,35 +210,6 @@ footer{
 #fleche{
     width: 40px;
 }
-/* Mentions légales */
-h6{
-    color: #912323;
-    padding-top: 10px;
-    font-weight: bold;
-}
-.modal-body {
-    color: #f8ffd7;
-    background: #757575;
-}
-.modal-header{
-    background: #912323;
-}
-.modal-footer{
-    background: #912323;
-}
-.text-decoration-none{
-    color: black;
-    font-weight: bold;
-}
-.mtn-leg{
-    display: flex;
-    justify-content: center;
-}
-.mtn-leg:hover{
-    color: #757575;
-}
-
-
 /* Media Querry */
 @media (max-width: 1030px){
     .img, .img-footer{
@@ -153,7 +222,6 @@ h6{
     }
     .btn-group{
         padding: 0;
-        position: fixed;
         right: 45px;
     }
     .titre-header{
@@ -164,11 +232,15 @@ h6{
     .titre-footer{
         padding-top: 5px;
     }
-    .nxt-icon-4{
-        transform: translateY(-120px);
+    .offcanvas{
+        height: 400px;
+        width: 400px;
     }
-    .prv-icon-4{
-        transform: translateY(-120px);
+    .p-resa{
+        font-size: 30px;
+    }
+    input{
+        width: 150px;
     }
 }
 @media (max-width: 800px){
@@ -183,12 +255,6 @@ h6{
     .img{
         padding-left: 3px;
     }
-    #carouselExampleCaptions-3{
-        padding-top: 20px;
-    }
-    .prv-icon-4, .nxt-icon-4 {
-        transform: translateY(0px);
-    }
     .titre-header{
         padding-right: 0;
         padding-top: 40px;
@@ -201,7 +267,6 @@ h6{
     .btn-group{
         height: 7vh;
         padding-bottom: 5px;
-        position: fixed;
         right: 27px;
     }
     .popover{
@@ -230,7 +295,6 @@ h6{
 }
 @media (max-width:550px){
     .btn-group{
-        position: fixed;
         right: 10px;
     }
     .titre-header{
@@ -246,11 +310,11 @@ h6{
     #video-presta{
         height: 300px;
     }
-    .nxt-icon-4{
-        transform: translateY(0px);
+    .offcanvas{
+        height: 300px;
     }
-    .prv-icon-4{
-        transform: translateY(0px);
+    .p-resa{
+        font-size: 20px;
     }
 }
 @media (max-width: 420px){
@@ -266,19 +330,7 @@ h6{
         padding-top: 10px;
     }
     #carouselExampleCaptions-3{
-        padding-top: 16px;
-    }
-    .carousel-control-next-icon{
-        
-        transform: translate(-5px, 5px);
-    }
-    .carousel-control-prev-icon{
-        transform: translate(5px, 5px);
-        
-    }
-    .carousel-indicators{
-        width: 55px;
-        transform: translate(35px, 20px);
+        padding-top: 10px;
     }
     h1{
         font-size: 20px;
@@ -288,9 +340,6 @@ h6{
     }
     .titre-footer{
         transform: translateX(10px);
-    }
-    .GoogleMapsPerso{
-        padding: 0;
     }
 }
 @media (max-width: 375px){
@@ -306,26 +355,11 @@ h6{
     .titre-footer{
         padding-right: 0;
     }
-    .carousel-indicators{
-        transform: translate(30px,20px);
-    }
 }
 @media (max-width: 360px){
     #video-presta{
         height: 190px;
         padding-top: 10px;
-    }
-    .carousel-control-next-icon{
-        
-        transform: translate(-5px, 5px);
-    }
-    .carousel-control-prev-icon{
-        
-        transform: translate(5px, 5px);
-    }
-    .carousel-indicators{
-        width: 55px;
-        transform: translate(25px, 20px);
     }
     .titre-footer{
         transform: translateX(10px);
@@ -334,8 +368,8 @@ h6{
         padding-left: 0;
         transform: translateX(-100px);
     }
-    .GoogleMapsPerso{
-        padding: 0;
+    #carouselExampleCaptions-3{
+        padding-top: 10px;
     }
 }
 @media (max-width: 320px){
@@ -351,10 +385,10 @@ h6{
     #carouselExampleCaptions-2{
         padding-top: 10px;
     }
-    .GoogleMapsPerso{
-        padding-left: 0;
-    }
     h1{
+        font-size: 20px;
+    }
+    h2, h3{
         font-size: 20px;
     }
     header h1{
@@ -386,7 +420,7 @@ h6{
         height: 40px;
     }
     #carouselExampleCaptions-3{
-        padding-top: 16px;
+        padding-top: 10px;
     }
     .titre-footer{
         padding: 0;
@@ -394,25 +428,16 @@ h6{
     h1{
         font-size: 15px;
     }
+    h2, h3{
+        font-size: 20px;
+    }
     #fleche{
         width: 30px;
     }
-    /* .modal{
-        /* transform: translateX(-150px); */
-    /* }
-    .modal-body {
-        color: #f8ffd7;
-        background: #757575;
-        width: 300px;
+    .offcanvas{
+        height: 300px;
+    }
+    .p-resa{
         font-size: 20px;
-        padding: 0;
     }
-    .modal-header{
-        background: #912323;
-        width: 300px;
-    }
-    .modal-footer{
-        background: #912323;
-        width: 300px;
-    } */
-} 
+}
