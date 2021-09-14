@@ -20,14 +20,15 @@
                     Ristorante Della Stella
                 </h1>
             </div>
+<!-- Bouton Menu -->
             <div id="btn-menu" class="btn-group col-2">
                   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                   Menu
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="#">Menu item</a></li>
-                  <li><a class="dropdown-item" href="#">Menu item</a></li>
-                  <li><a class="dropdown-item" href="#">Menu item</a></li>
+                  <li><a class="dropdown-item" href="#carte-repas">Menu </a></li>
+                  <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                  <li><a class="dropdown-item" href="#btn-canvas">Réservation</a></li>
                   </ul>
             </div>
         </div>
@@ -38,7 +39,7 @@
             <video  style="width: 100%;" autoplay muted loop src="./Ressource/Adobe_Spark_Video (1) (online-video-cutter.com).mp4"></video>
         </section>
 <!-- Carousel -->
-        <div class="row carousel-row">
+        <div class="row carousel-row" id="carte-repas">
           <div id="carouselExampleCaptions-1" class="carousel slide col-12 col-md-4" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions-1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -179,15 +180,6 @@
           </div>
           <div class="col-md-4 col-12">
             <div id="carouselExampleCaptions-4" class="carousel slide col-12 pt-3" data-bs-ride="carousel">
-              <!-- <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions-4" data-bs-slide-to="6" aria-label="Slide 7"></button>
-              </div> -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./Ressource/Menu/menu1-min.png" class="d-block w-100" alt="...">
@@ -229,7 +221,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 content-contact">
+          <div class="col-12 col-md-4 content-contact" id="contact">
             <div class="col-12">
               <h2 class="h2-contact">
                 Nous Contacter
@@ -259,17 +251,18 @@
             <iframe id="maps" title="GoogleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.109404286912!2d5.198015615791415!3d46.20827857911683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f351d5381cf5a1%3A0xa21cda6ac9796fea!2sOnlineformapro!5e0!3m2!1sfr!2sfr!4v1631125019508!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
-        <div id="rating-div"> 
-          <div class="rating">
+        <div id="rating-div" class="col-12"> 
+          <div class="rating col-12">
             <div class="etoile">★</div>
             <div class="etoile">★</div>
             <div class="etoile">★</div>
             <div class="etoile">★</div>
             <div class="etoile">★</div>
           </div>
-            <a id="avis" href="https://www.google.com/search?q=online+forma+pro+amberieu&rlz=1C1GCEA_enFR961FR961&tbm=lcl&ei=15dAYca6H-2MlwTHjo6IAg&oq=online+forma+pro+amberieu&gs_l=psy-ab.3..0i13k1.8064.11711.0.12219.9.9.0.0.0.0.417.1594.1j6j1j0j1.9.0....0...1c.1.64.psy-ab..0.9.1592...38j0i10k1j0i22i10i30k1j33i22i29i30k1.0.3pG9_A9eWA0#rlfi=hd:;si:14287662237491192799,l,ChlvbmxpbmUgZm9ybWEgcHJvIGFtYmVyaWV1WhsiGW9ubGluZSBmb3JtYSBwcm8gYW1iZXJpZXWSAQ9sZWFybmluZ19jZW50ZXI;mv:[[45.955839277319036,5.340241180140748],[45.95547932268097,5.33972341985925]]">Avis clients</a>
-          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Réservation</button>
-          <div class="offcanvas offcanvas-bottom col-12 col-md-4" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+          <a id="avis" class="col-12" href="https://www.google.com/search?q=online+forma+pro+amberieu&rlz=1C1GCEA_enFR961FR961&tbm=lcl&ei=15dAYca6H-2MlwTHjo6IAg&oq=online+forma+pro+amberieu&gs_l=psy-ab.3..0i13k1.8064.11711.0.12219.9.9.0.0.0.0.417.1594.1j6j1j0j1.9.0....0...1c.1.64.psy-ab..0.9.1592...38j0i10k1j0i22i10i30k1j33i22i29i30k1.0.3pG9_A9eWA0#rlfi=hd:;si:14287662237491192799,l,ChlvbmxpbmUgZm9ybWEgcHJvIGFtYmVyaWV1WhsiGW9ubGluZSBmb3JtYSBwcm8gYW1iZXJpZXWSAQ9sZWFybmluZ19jZW50ZXI;mv:[[45.955839277319036,5.340241180140748],[45.95547932268097,5.33972341985925]]" target="_blank">Avis clients</a>
+          <div class="bouton-canvas" id="btn-canvas">
+            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Réservation</button>
+            <div class="offcanvas offcanvas-bottom col-3"     tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasBottomLabel">Réservation</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -278,7 +271,21 @@
               <p class="p-resa">À quelle heure souhaitez vous réserver ?</p> <input type="time" name="debut">
               <p class="p-resa">La date de votre réservation ?</p> <input type="date" name="calendrier">
             </div>
+            </div>
+            <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Écrivez-nous !</button>
+            <div class="offcanvas offcanvas-top col-3" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <textarea name="message" cols="20" rows="5" placeholder="Besoin de renseignements ? Envoyez-nous un message ! ♥"></textarea>
+            </div>
           </div>
+        </div>
+            
+          
+          
         </div>
       </div>  
   <!-- Fermeture container -->
@@ -310,7 +317,7 @@
             <div class="modal-body">
               <p>
                   <h6>1 - Édition du site</h6>
-                  En vertu de <a class="text-decoration-none" href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164/#LEGIARTI000042038977">l'article 6 de la loi n° 2004-575 du 21 juin 2004</a> pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet <a class="text-decoration-none" href="https://tiffanyf.promo-92.codeur.online/Ristorante-Della-Stella/">Ristorante Della Stella</a> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi:
+                  En vertu de <a class="text-decoration-none" href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000801164/#LEGIARTI000042038977" target="_blank">l'article 6 de la loi n° 2004-575 du 21 juin 2004</a> pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet <a class="text-decoration-none" href="https://tiffanyf.promo-92.codeur.online/Ristorante-Della-Stella/">Ristorante Della Stella</a> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi:
 
                   Propriétaire du site : ONLINE FORMAPRO - Contact : +33458005257 - Adresse : 244B Rue du Point du Jour, 01000 Saint-Denis-lès-Bourg.
 
