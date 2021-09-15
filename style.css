@@ -95,6 +95,12 @@ video{
 .carte-resto:hover{
     color: black;
 }
+#chef{
+    height: 150px;
+    width: auto;
+    padding-left: 100px;
+    padding-top: 10px;
+}
 .row{
     margin: 0;
     padding: 0;
@@ -300,6 +306,10 @@ footer{
     .carte-resto{
         font-size: 20px;
     }
+    #chef{
+        height: 250px;
+        padding-left: 10px;
+    }
 }
 @media (max-width: 800px){
     #video-presta{
@@ -361,13 +371,18 @@ footer{
         transform: translateY(-80px);
     }
     .p-contact{
-        font-size: 20px;
+        font-size: 25px;
     }
     .span-horaire{
-        font-size: 12px;
+        font-size: 15px;
     }
     .content-contact{
         width: auto;
+    }
+    #chef{
+        padding-left: 10px;
+        padding-top: 10px;
+        height: 190px;
     }
 }
 @media (max-width:550px){
@@ -395,6 +410,9 @@ footer{
     }
     .dropdown-menu{
         font-size: 10px;
+    }
+    #chef{
+        padding-left: 150px;
     }
 }
 @media (max-width: 420px){
@@ -427,6 +445,9 @@ footer{
     .dropdown-toggle{
         transform: translateX(-15px);
     }
+    #chef{
+        padding-left: 70px;
+    }
 }
 @media (max-width: 375px){
     h1{
@@ -447,9 +468,9 @@ footer{
     .dropdown-toggle{
         transform: translateX(-20px);
     }
-    
-    
-    
+    #chef{
+        padding-left: 50px;
+    }
 }
 @media (max-width: 360px){
     #video-presta{
@@ -475,7 +496,6 @@ footer{
     .dropdown-toggle{
         transform: translateX(-20px);
     }
-    
 }
 @media (max-width: 320px){
     .titre-header{
@@ -516,6 +536,9 @@ footer{
     }
     #myBtn{
         padding: 8px;
+    }
+    #chef{
+        padding-left: 30px;
     }
 }
 @media (max-width: 280px){
@@ -578,5 +601,8 @@ footer{
     }
     .carte-resto{
         font-size: 13px;
+    }
+    #chef{
+        padding-left: 30px;
     }
 }
