@@ -261,6 +261,9 @@ footer{
 #fleche{
     width: 40px;
 }
+.img-zoom{
+    width: 100%;
+}
 /* Media Querry */
 @media (max-width: 1030px){
     .img, .img-footer{
