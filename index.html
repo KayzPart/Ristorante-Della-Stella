@@ -12,13 +12,13 @@
   </head>
     <body>
       <header> 
-        <div class="col-12 text-center">
-          <div>
+        <div class="row">
+          <div class="col-2 px-0">
             <a href="./index.html">
               <img class="logo-site" src="./Ressource/logo-della-stella_optimized.png" alt="logo-della-stella">
             </a>
           </div>
-          <div class="titre-header">
+          <div class="titre-header jcc col-8">
             <h1>
                 Ristorante Della Stella
             </h1>
@@ -215,7 +215,7 @@
                 <span class="visually-hidden">Next</span>
               </button>
               <div>
-                <a class="carte-resto" href="./Ressource/Carte plats resto_compressed (1).pdf" target="_blank">Choisissez vos plats à la carte (PDF)</a>
+                <a class="carte-resto jcc" href="./Ressource/Carte plats resto_compressed (1).pdf" target="_blank">Choisissez vos plats à la carte (PDF)</a>
               </div>
               <div>
                 <img id="chef" src="./Ressource/chef-307076_640-min.png" alt="logo-chef-cuisinier">
@@ -262,18 +262,18 @@
         </div>
 <!-- Fin div carousel -->
         <div id="rating-div" class="col-12"> 
-          <div class="rating">
+          <div class="rating jcc">
             <a class="etoile" href="https://www.google.com/search?q=online+forma+pro+amberieu&rlz=1C1GCEA_enFR961FR961&tbm=lcl&ei=15dAYca6H-2MlwTHjo6IAg&oq=online+forma+pro+amberieu&gs_l=psy-ab.3..0i13k1.8064.11711.0.12219.9.9.0.0.0.0.417.1594.1j6j1j0j1.9.0....0...1c.1.64.psy-ab..0.9.1592...38j0i10k1j0i22i10i30k1j33i22i29i30k1.0.3pG9_A9eWA0#rlfi=hd:;si:14287662237491192799,l,ChlvbmxpbmUgZm9ybWEgcHJvIGFtYmVyaWV1WhsiGW9ubGluZSBmb3JtYSBwcm8gYW1iZXJpZXWSAQ9sZWFybmluZ19jZW50ZXI;mv:[[45.955839277319036,5.340241180140748],[45.95547932268097,5.33972341985925]]">★★★★★
             </a>
           </div>
-          <div class="avis-client">
-            <p class="avis-client">
+          <div class="avis-client jcc">
+            <p>
               <a class="avis-client" href="https://www.google.com/search?q=online+forma+pro+amberieu&rlz=1C1GCEA_enFR961FR961&tbm=lcl&ei=15dAYca6H-2MlwTHjo6IAg&oq=online+forma+pro+amberieu&gs_l=psy-ab.3..0i13k1.8064.11711.0.12219.9.9.0.0.0.0.417.1594.1j6j1j0j1.9.0....0...1c.1.64.psy-ab..0.9.1592...38j0i10k1j0i22i10i30k1j33i22i29i30k1.0.3pG9_A9eWA0#rlfi=hd:;si:14287662237491192799,l,ChlvbmxpbmUgZm9ybWEgcHJvIGFtYmVyaWV1WhsiGW9ubGluZSBmb3JtYSBwcm8gYW1iZXJpZXWSAQ9sZWFybmluZ19jZW50ZXI;mv:[[45.955839277319036,5.340241180140748],[45.95547932268097,5.33972341985925]]" target="_blank">Avis clients</a>
             </p>
           </div>
           <div class="bouton-canvas" id="btn-canvas">
             <button class="btn btn-secondary h-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Réservation</button>
-            <div class="offcanvas offcanvas-bottom col-3" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas offcanvas-bottom col-3 jcc" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasBottomLabel">Réservation</h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -322,13 +322,15 @@
               <img class="logo-site" src="./Ressource/logo-della-stella_optimized.png" alt="logo-della-stella">
             </a>
           </div>
-          <div class="titre-footer col-8">
+          <div class="titre-footer jcc col-8">
             <h1>Ristorante Della Stella</h1>
           </div>
         </div>
 <!-- Button trigger modal -->
-        <a class="text-decoration-none mtn-leg" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#staticBackdrop">Mentions légales
-        </a> 
+        <div class=" mtn-leg jcc">
+          <a class="text-decoration-none" id="mention-legale" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#staticBackdrop">Mentions légales
+          </a> 
+        </div>
 <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
           <div class="modal-dialog">

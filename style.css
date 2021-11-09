@@ -12,6 +12,14 @@ p{
     color: whitesmoke;
     font-family: 'Dancing Script', cursive;
 }
+/* Classe Générale */
+.jcc{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ***************************************************************************** */
 .container{
     background: #757575;
     padding-right: 30px;
@@ -34,7 +42,6 @@ header{
     font-family: 'Lobster', cursive;
     padding-top: 50px;
     color: #f8ffd7;
-    transform: translateX(-600px);
 }
 .logo-site{
     height: 11vh;
@@ -89,8 +96,6 @@ video{
     padding-top: 10px;
     text-decoration: none;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
 }
 .carte-resto:hover{
     color: black;
@@ -127,8 +132,6 @@ video{
     padding-bottom: 20px;
 }
 .avis-client{
-    display: flex;
-    justify-content: center;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -139,8 +142,6 @@ video{
 }
 .rating {
     direction: rtl;
-    display: flex;
-    justify-content: center;
 }
 .etoile {
     color: rgb(240, 219, 32);
@@ -154,10 +155,6 @@ video{
 .h-btn{
     font-family: 'Lobster', cursive;
     font-size: 20px;
-}
-.offcanvas{
-    display: flex;
-    justify-content: center;
 }
 .offcanvas-title{
     font-size: 25px;
@@ -194,6 +191,12 @@ textarea{
     color: #757575;
 }
 /* Mentions légales */
+#mention-legale{
+    color: black;
+}
+#mention-legale:hover{
+    color: #757575;
+}
 h6{
     color: #912323;
     font-size: 20px;
@@ -217,14 +220,6 @@ h6{
 .text-decoration-none:hover{
     color: #f8ffd78f;
 }
-.mtn-leg{
-    color: black;
-    display: flex;
-    justify-content: center;
-}
-.mtn-leg:hover{
-    color: #757575;
-}
 /* footer */
 footer{
     background: #912323;
@@ -233,8 +228,6 @@ footer{
 .titre-footer{
     font-family: 'Lobster', cursive; 
     color: #f8ffd7;  
-    display: flex;
-    justify-content: center;
     align-self: center;
 }
 /* Button Back To Top */
@@ -279,9 +272,7 @@ footer{
         right: 45px;
     }
     .titre-header{
-        padding-top: 35px;
-        padding-left: 10px;
-        transform: translateX(-400px);
+        padding-top: 45px;
     }
     .dropdown-menu{
         margin-left: 50px !important;
@@ -314,11 +305,11 @@ footer{
         padding-left: 10px;
     }
 }
-@media (max-width: 800px){
+/* @media (max-width: 800px){
     #video-presta{
         padding-bottom: 10px;
     }
-}
+} */
 @media (max-width: 768px){
     #logo-site{
         height: 9vh;
@@ -329,7 +320,7 @@ footer{
     .titre-header{
         padding-right: 0;
         padding-top: 40px;
-        transform: translateX(-290px); 
+        /* transform: translateX(-290px);  */
     }
     .titre-footer{
         padding-top: 40px;
@@ -394,7 +385,7 @@ footer{
     }
     .titre-header{
         padding-left: 10px;
-        transform: translateX(-190px);
+        /* transform: translateX(-190px); */
     }
     .titre-footer{
         padding-left: 20px;
@@ -436,9 +427,9 @@ footer{
     h1{
         font-size: 20px;
     }
-    .titre-header{
+    /* .titre-header{
         transform: translateX(-115px);
-    }
+    } */
     .titre-footer{
         transform: translateX(-10px);
     }
@@ -462,9 +453,9 @@ footer{
     video{
         height: 210px;
     }
-    .titre-header{
+    /* .titre-header{
         transform: translateX(-100px);
-    }
+    } */
     .titre-footer{
         padding-right: 0;
     }
@@ -485,7 +476,7 @@ footer{
     }
     .titre-header{
         padding-left: 0;
-        transform: translateX(-100px);
+        /* transform: translateX(-100px); */
     }
     #carouselExampleCaptions-3{
         padding-top: 10px;
@@ -502,12 +493,9 @@ footer{
 }
 @media (max-width: 320px){
     .titre-header{
-        padding-left: 0px;
+        transform: translateX(-30px);
     }
-    #video-presta{
-        height: 150px;
-    }
-    video{
+    #video-presta, video{
         height: 150px;
     }
     #carouselExampleCaptions-1{
@@ -515,12 +503,6 @@ footer{
     }
     #carouselExampleCaptions-2{
         padding-top: 10px;
-    }
-    .carousel-inner h5{
-        transform: translateY(0);
-    }
-    .dropdown-toggle{
-        transform: translateX(-20px);
     }
     h1{
         font-size: 20px;
@@ -545,22 +527,12 @@ footer{
     }
 }
 @media (max-width: 280px){
-    #video-presta{
-        height: 150px;
-        padding-bottom: 10px;
-    }
-    video{
-        height: 150px;
-    }
-    #coordonnees{
-        padding-top: 0;
-    }
     .logo-site{
         height: 8vh;
     }
     .titre-header{
-        padding: 0;
         padding-top: 20px;
+        transform: translateX(-30px);
     }
     .btn-group{
         height: 40px; 
@@ -573,13 +545,9 @@ footer{
     }
     .carousel-inner h5{
         font-size: 20px;
-        transform: translateY(0);
     }
     .p-carousel{
         font-size: 15px;
-    }
-    .titre-footer{
-        padding: 0;
     }
     h1{
         font-size: 15px;
@@ -589,9 +557,6 @@ footer{
     }
     #fleche{
         width: 30px;
-    }
-    .offcanvas{
-        height: 300px;
     }
     .p-resa{
         font-size: 20px;
@@ -604,8 +569,5 @@ footer{
     }
     .carte-resto{
         font-size: 13px;
-    }
-    #chef{
-        padding-left: 30px;
     }
 }
